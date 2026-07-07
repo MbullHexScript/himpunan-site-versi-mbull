@@ -1,6 +1,6 @@
 # LAZARUS — Template Website Komunitas
 
-Clone struktur & animasi dari AOS, dibangun ulang dengan **React + Vite +
+Struktur & animasi dari AOS, dibangun ulang dengan **React + Vite +
 Tailwind CSS v4 + Framer Motion**.
 
 ## Stack
