@@ -60,9 +60,11 @@ export default function Navbar() {
     >
       <nav className="container-hmps flex items-center justify-between h-[76px]">
         <Link to="/" className="flex items-center gap-2 shrink-0">
-          <span className="w-9 h-9 rounded-full bg-blue-600 text-white grid place-items-center">
-            <ShieldCheck size={18} />
-          </span>
+          <img
+            src="/logo_hmps.png"
+            alt="Logo HMPS"
+            className="h-10 w-10 object-contain"
+          />
           <span className="font-display font-extrabold text-lg tracking-tight text-slate-900">
             LAZARUS
           </span>
