@@ -1,36 +1,36 @@
 export const aktivitasList = [
   {
-    slug: "seminar-cyber-security",
-    kategori: "SEMINAR",
-    status: "selesai", // "akan-datang" | "berlangsung" | "selesai"
+    slug: "kaderisasi mahasiswa informatika 2026",
+    kategori: "KADERISASI",
+    status: "akan-datang", // "akan-datang" | "berlangsung" | "selesai"
     tipe: "offline",
-    lokasi: "UINSMH Banten",
-    tanggalMulai: "2026-06-27",
-    tanggalSelesai: "2026-06-27",
-    durasi: "1 hari",
-    judul: "Seminar Garda Digital",
+    lokasi: "villa anyer beach resort",
+    tanggalMulai: "2026-09-12",
+    tanggalSelesai: "2026-09-13",
+    durasi: "2 hari",
+    judul: "IT CAMP 2026",
     ringkas:
-      "Di era AI, ancaman digital makin canggih — mulai dari pencurian data 🔒, phishing, deepfake 🕵️, hingga jejak digital yang bisa memengaruhi masa depan karier 💼.",
+      "event kaderasi jurusan untuk menyambut mahasiswa baru jurusan informatika, event ini akan memperkenalkan seputar jurusan & organisasi hmps informatika tersebut.",
     cover: "gradient-blue",
     detail: {
-      judulBesar: "GARDA DIGITAL 2026",
-      subjudul: "Lindungi Privasi, Amankan Karier, Waspada Ancaman AI",
+      judulBesar: "IT CAMP 2026",
+      subjudul: "Satukan Mahasiswa Informatika, Bangun Generasi Digital",
       deskripsi:
-        "Seminar ini akan membahas cara memahami kejahatan digital modern, menjaga reputasi dan jejak digital, melindungi data pribadi, serta mendapatkan insight langsung dari praktisi cybersecurity profesional.",
+        "event kaderasi jurusan untuk menyambut mahasiswa baru jurusan informatika, event ini akan memperkenalkan seputar jurusan & organisasi hmps informatika tersebut. biasanya di jalankan di luar kampus contoh nya di villa.",
       speakers: [
-        { nama: "Yudhistira Arya Mutamang", peran: "Cyber Security Consultant" },
-        { nama: "Renko Varel Angelo", peran: "Lead Reverse Engineering" },
+        { nama: "Ahmad Tabrani M.T", peran: "Kepala Program Studi Informatika" },
+        { nama: "Naufal Afaf Ekayana", peran: "Kepala Departemen Internal" },
       ],
-      jadwal: "Sabtu, 27 Juni 2026",
+      jadwal: "Sabtu, 12 september 2026",
       waktu: "09.15 WIB – selesai",
-      tempat: "Aula Universitas BSI Jatiwaringin",
+      tempat: "villa anyer beach resort",
       benefit:
-        "E-sertifikat untuk 60 orang tercepat, akses materi, networking, Klinik Digital, dan doorprize menarik.",
-      target: "Terbuka untuk mahasiswa & umum",
+        "Sertifikat, akses materi, dan doorprize menarik.",
+      target: "Terbuka untuk mahasiswa baru jurusan informatika UINSMHB.",
       kuota: "Kuota terbatas — siapa cepat dia dapat!",
       kontak: [
-        { nama: "Irham", telepon: "0813-1048-1842" },
-        { nama: "Dinda", telepon: "0857-3172-1430" },
+        { nama: "Irham Jomok", telepon: "0813-1048-1842" },
+        { nama: "Fieren Kroco", telepon: "0857-3172-1430" },
       ],
       penyelenggara: "Kabinet Lazarus",
     },

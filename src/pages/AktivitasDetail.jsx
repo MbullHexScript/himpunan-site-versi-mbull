@@ -139,8 +139,7 @@ export default function AktivitasDetail() {
               </ul>
 
               <p>
-                🚀 Yuk ikuti {item.judul} dan jadi pengguna internet yang
-                lebih cerdas, aman, dan bijak!
+                🚀 Yuk ikuti {item.judul} dan jadi bagian dari keluarga Informatika UINSMHB!
               </p>
             </div>
 

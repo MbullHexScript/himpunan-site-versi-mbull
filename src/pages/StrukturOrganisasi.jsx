@@ -6,6 +6,17 @@ import Eyebrow from "../components/Eyebrow";
 import TeamCard from "../components/TeamCard";
 import { bph, departemenList } from "../data/organisasi";
 
+// Bagi array jadi kelompok-kelompok berukuran `size`, dipakai supaya
+// tiap baris anggota selalu berisi maksimal 4 kartu dan baris terakhir
+// yang cuma sisa 1-2 kartu tetap ke-render sebagai baris tersendiri (biar bisa di-center).
+function chunk(arr, size) {
+  const result = [];
+  for (let i = 0; i < arr.length; i += size) {
+    result.push(arr.slice(i, i + size));
+  }
+  return result;
+}
+
 export default function StrukturOrganisasi() {
   const [tab, setTab] = useState(departemenList[0].slug);
   const active = departemenList.find((d) => d.slug === tab);
@@ -104,18 +115,18 @@ export default function StrukturOrganisasi() {
               <p className="text-sm text-slate-500 mb-8">{active.namaLengkap}</p>
 
               {/* Kepala + Sekretaris Departemen, menyebar kiri-kanan, simetris di tengah */}
-                <div className="flex flex-col sm:flex-row sm:justify-around items-center gap-8 sm:gap-4 mb-14 max-w-3xl mx-auto">
+              <div className="flex flex-col sm:flex-row sm:justify-around items-center gap-8 sm:gap-4 mb-14 max-w-3xl mx-auto">
                 <div className="w-40">
-                    <Reveal once={false}>
+                  <Reveal once={false}>
                     <TeamCard {...active.ketua} jabatan="Kepala Departemen" />
-                    </Reveal>
+                  </Reveal>
                 </div>
                 <div className="w-40">
-                    <Reveal once={false} delay={0.1}>
+                  <Reveal once={false} delay={0.1}>
                     <TeamCard {...active.sekretaris} jabatan="Sekretaris Departemen" />
-                    </Reveal>
+                  </Reveal>
                 </div>
-                </div>
+              </div>
 
               {/* Anggota */}
               <div className="flex items-center gap-2 mb-4">
@@ -124,13 +135,17 @@ export default function StrukturOrganisasi() {
                   Anggota
                 </p>
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 justify-items-center">
-                {active.anggota.map((a, i) => (
-                  <Reveal key={a.nim} once={false} delay={(i % 4) * 0.06}>
-                    <div className="w-36">
-                      <TeamCard {...a} size="sm" />
-                    </div>
-                  </Reveal>
+              <div className="space-y-4">
+                {chunk(active.anggota, 4).map((row, ri) => (
+                  <div key={ri} className="flex flex-wrap justify-center gap-4">
+                    {row.map((a, i) => (
+                      <Reveal key={a.nim} once={false} delay={((ri * 4 + i) % 4) * 0.06}>
+                        <div className="w-36">
+                          <TeamCard {...a} size="sm" />
+                        </div>
+                      </Reveal>
+                    ))}
+                  </div>
                 ))}
               </div>
             </motion.div>
