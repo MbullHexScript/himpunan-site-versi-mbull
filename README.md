@@ -46,7 +46,7 @@ npm run build     # build production ke /dist
 npm run preview   # preview hasil build
 ```
 
-## Yang Perlu Kamu Ganti
+## Data Penting
 
 1. **Nama & identitas** — cari-ganti "HMPS INFORMATIKA" di `Navbar.jsx`, `Footer.jsx`,
    `Hero.jsx`, dan `index.html`.
