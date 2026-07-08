@@ -56,9 +56,9 @@ export default function StrukturOrganisasi() {
             {/* Connector lines — desktop only */}
             <div className="hidden md:block relative h-12">
               <div className="absolute left-1/2 top-0 w-px h-6 bg-[var(--border)] -translate-x-1/2" />
-              <div className="absolute left-[22%] right-[22%] top-6 h-px bg-[var(--border)]" />
-              <div className="absolute left-[22%] top-6 w-px h-6 bg-[var(--border)]" />
-              <div className="absolute right-[22%] top-6 w-px h-6 bg-[var(--border)]" />
+              <div className="absolute left-[12%] right-[12%] top-6 h-px bg-[var(--border)]" />
+              <div className="absolute left-[12%] top-6 w-px h-6 bg-[var(--border)]" />
+              <div className="absolute right-[12%] top-6 w-px h-6 bg-[var(--border)]" />
             </div>
             {/* Mobile spacer */}
             <div className="h-8 md:hidden" />

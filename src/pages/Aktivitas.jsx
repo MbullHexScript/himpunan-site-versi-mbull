@@ -18,8 +18,7 @@ export default function Aktivitas() {
   return (
     <div className="pb-24">
       <PageHero
-        title="Jelajahi"
-        highlight="Aktivitas Kami"
+        title="Jelajahi Aktivitas Kami"
         subtitle="Temukan berbagai kegiatan, workshop, seminar, dan kompetisi yang diselenggarakan oleh HMPS Informatika untuk meningkatkan skill kamu."
         image="/PageHero-hmps.jpg"
       />

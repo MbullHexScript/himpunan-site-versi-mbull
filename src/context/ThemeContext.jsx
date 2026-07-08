@@ -6,7 +6,7 @@ export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem("hmps-theme");
     if (saved === "light" || saved === "dark") return saved;
-    return "dark"; // default: gelap
+    return "light"; // default: gelap
   });
 
   useEffect(() => {
