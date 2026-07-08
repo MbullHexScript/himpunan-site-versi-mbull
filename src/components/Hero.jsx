@@ -40,7 +40,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.35 }}
           className="text-slate-300 text-sm md:text-base tracking-[0.2em] uppercase mt-2 mb-6"
         >
-          Himpunan Mahasiswa Informatika · UINSMHB
+          Himpunan Mahasiswa Program Studi Informatika
         </motion.p>
 
         <motion.p
@@ -49,7 +49,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.45 }}
           className="max-w-xl mx-auto text-slate-300 text-base md:text-lg mb-10"
         >
-          Wadah resmi mahasiswa Informatika UINSMHB untuk mengembangkan potensi,
+          Wadah resmi mahasiswa Informatika UIN Sultan Maulana Hasanuddin Banten untuk mengembangkan potensi,
           kompetensi akademik, kreativitas, integritas, dan aspirasi.
         </motion.p>
 

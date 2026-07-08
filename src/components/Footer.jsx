@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, MapPin } from "lucide-react";
 import { InstagramIcon, LinkedinIcon, YoutubeIcon } from "./BrandIcons";
 
 export default function Footer() {
@@ -66,8 +66,17 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-slate-800">
-        <div className="container-hmps py-5 text-xs text-slate-500">
-          © {new Date().getFullYear()} <span className="text-slate-300 font-medium">KABINET LAZARUS</span>. All Rights Reserved.
+        <div className="container-hmps flex flex-col gap-3 py-5 text-xs text-slate-500 md:flex-row md:items-center md:justify-between">
+          <p>
+            © {new Date().getFullYear()} <span className="text-slate-300 font-medium">KABINET LAZARUS</span>. All Rights Reserved.
+          </p>
+          <address className="flex max-w-xl gap-2 not-italic leading-relaxed text-slate-400 md:justify-end md:text-right">
+            <MapPin size={16} className="mt-0.5 shrink-0 text-blue-400" />
+            <span>
+              Jl. Syeh Nawawi Al Bantani No. 01, Gedung B FSAINS UIN SMHB,
+              Curug, Kota Serang — Banten.
+            </span>
+          </address>
         </div>
       </div>
     </footer>

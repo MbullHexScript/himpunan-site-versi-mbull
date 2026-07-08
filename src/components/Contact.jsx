@@ -1,34 +1,33 @@
 import Reveal from "./Reveal";
 import Eyebrow from "./Eyebrow";
-import { Mail, ArrowUpRight } from "lucide-react";
-import { InstagramIcon, LinkedinIcon, YoutubeIcon } from "./BrandIcons";
+import { ArrowUpRight } from "lucide-react";
 
 const platforms = [
   {
-    icon: InstagramIcon,
-    color: "bg-pink-500",
+    icon: "https://img.icons8.com/pulsar-gradient/96/instagram-new.png",
+    alt: "instagram-new",
     label: "INSTAGRAM",
     value: "@hmpsinformatika",
     href: "https://www.instagram.com/hmpsinf/?hl=id",
   },
   {
-    icon: LinkedinIcon,
-    color: "bg-blue-600",
-    label: "LINKEDIN",
-    value: "Himpunan Mahasiswa Informatika UINSMH",
-    href: "https://www.linkedin.com/company/himpunan-mahasiswa-informatika-UINSMH/",
+    icon: "https://img.icons8.com/pulsar-gradient/96/tiktok.png",
+    alt: "tiktok",
+    label: "TIKTOK",
+    value: "@hmpsinformatika",
+    href: "https://www.tiktok.com/@hmpsinformatika",
   },
   {
-    icon: YoutubeIcon,
-    color: "bg-red-500",
+    icon: "https://img.icons8.com/pulsar-gradient/48/youtube-play.png",
+    alt: "youtube-play",
     label: "YOUTUBE",
     value: "@hmpsinformatika",
     href: "https://www.youtube.com/@hmpsinformatika",
   },
   {
-    icon: Mail,
-    color: "bg-emerald-500",
-    label: "EMAIL",
+    icon: "https://img.icons8.com/pulsar-gradient/96/secured-letter.png",
+    alt: "secured-letter",
+    label: "GMAIL",
     value: "lazarus@uin.ac.id",
     href: "mailto:lazarus@uin.ac.id",
   },
@@ -64,8 +63,12 @@ export default function Contact() {
                 className="group block bg-white border border-slate-100 rounded-2xl p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full"
               >
                 <div className="flex items-start justify-between mb-8">
-                  <span className={`w-11 h-11 rounded-xl ${p.color} text-white grid place-items-center`}>
-                    <p.icon size={19} />
+                  <span className="w-12 h-12 rounded-xl bg-slate-50 ring-1 ring-slate-100 grid place-items-center">
+                    <img
+                      src={p.icon}
+                      alt={p.alt}
+                      className="h-9 w-9 object-contain"
+                    />
                   </span>
                   <ArrowUpRight
                     size={16}

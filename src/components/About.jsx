@@ -8,7 +8,7 @@ export default function About() {
         <Reveal>
           <Eyebrow>TENTANG KAMI</Eyebrow>
           <h2 className="font-display font-extrabold text-4xl md:text-5xl mt-5 mb-6 leading-tight text-slate-900">
-            Mengenal <span className="text-blue-600">LAZARUS</span>
+            Mengenal Kabinet <span className="text-blue-600">LAZARUS</span>
           </h2>
           <p className="text-slate-600 leading-relaxed mb-4">
             Kabinet Lazarus adalah wadah resmi bagi mahasiswa Program Studi
@@ -18,7 +18,7 @@ export default function About() {
           </p>
           <p className="text-slate-600 leading-relaxed">
             Kami berkomitmen membentuk mahasiswa yang berkompeten, kreatif,
-            dan berintegritas — menjadi jembatan antara mahasiswa dan civitas
+            dan berintegritas dan menjadi jembatan antara mahasiswa dan civitas
             akademika UINSMHB, menciptakan lingkungan akademis yang dinamis dan
             berdampak.
           </p>
