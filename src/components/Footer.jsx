@@ -54,11 +54,13 @@ export default function Footer() {
         <div>
           <h4 className="text-xs font-semibold tracking-wider text-slate-400 mb-4">UNIVERSITAS</h4>
           <a
-            href="#"
+            href="https://informatika.fsainsuinbanten.my.id/"
+            target="_blank"
+            rel="noreferrer"
             className="block bg-slate-800/60 rounded-xl p-4 hover:bg-slate-800 transition-colors"
           >
             <span className="flex items-center gap-1 text-blue-400 text-xs font-semibold">
-              LAZARUS OFFICIAL <ExternalLink size={12} />
+              INFORMATIKA OFFICIAL <ExternalLink size={12} />
             </span>
             <span className="block text-sm text-white mt-1">INFORMATIKA UINSMHB</span>
           </a>

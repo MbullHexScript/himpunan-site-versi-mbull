@@ -4,28 +4,28 @@ import { ArrowUpRight } from "lucide-react";
 
 const platforms = [
   {
-    icon: "https://img.icons8.com/pulsar-gradient/96/instagram-new.png",
+    icon: "https://img.icons8.com/3d-fluency/94/instagram-new.png",
     alt: "instagram-new",
     label: "INSTAGRAM",
     value: "@hmpsinformatika",
     href: "https://www.instagram.com/hmpsinf/?hl=id",
   },
   {
-    icon: "https://img.icons8.com/pulsar-gradient/96/tiktok.png",
+    icon: "https://img.icons8.com/3d-fluency/94/tiktok.png",
     alt: "tiktok",
     label: "TIKTOK",
     value: "@hmpsinformatika",
     href: "https://www.tiktok.com/@hmpsinformatika",
   },
   {
-    icon: "https://img.icons8.com/pulsar-gradient/48/youtube-play.png",
+    icon: "https://img.icons8.com/fluency/48/youtube-play.png",
     alt: "youtube-play",
     label: "YOUTUBE",
     value: "@hmpsinformatika",
     href: "https://www.youtube.com/@hmpsinformatika",
   },
   {
-    icon: "https://img.icons8.com/pulsar-gradient/96/secured-letter.png",
+    icon: "https://img.icons8.com/fluency/48/secured-letter.png",
     alt: "secured-letter",
     label: "GMAIL",
     value: "lazarus@uin.ac.id",
