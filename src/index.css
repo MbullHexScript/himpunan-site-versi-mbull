@@ -8,18 +8,18 @@
   --font-display: "Manrope", "Inter", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
 
-  /* Skala Electric Violet — dipakai lewat class bg-violet-*, text-violet-*, dst */
-  --color-violet-50: #f5f3ff;
-  --color-violet-100: #ede9fe;
-  --color-violet-200: #ddd6fe;
-  --color-violet-300: #c4b5fd;
-  --color-violet-400: #a78bfa;
-  --color-violet-500: #8b5cf6;
-  --color-violet-600: #7c3aed;
-  --color-violet-700: #6d28d9;
-  --color-violet-800: #5b21b6;
-  --color-violet-900: #4c1d95;
-  --color-violet-950: #2e1065;
+  /* Skala Royal Blue — dipakai lewat class bg-blue-*, text-blue-*, dst */
+  --color-blue-50:  #eef2fb;
+  --color-blue-100: #d5e0f4;
+  --color-blue-200: #adc1e9;
+  --color-blue-300: #7da0d8;
+  --color-blue-400: #5580c8;
+  --color-blue-500: #3d65b8;
+  --color-blue-600: #2D4FA5;
+  --color-blue-700: #253f87;
+  --color-blue-800: #1c3069;
+  --color-blue-900: #14224c;
+  --color-blue-950: #0c1530;
 }
 
 :root {
@@ -35,32 +35,32 @@
   --border-subtle: #f1f5f9;
   --border: #e2e8f0;
 
-  --brand: var(--color-violet-600);
-  --brand-hover: var(--color-violet-700);
-  --brand-text: var(--color-violet-600);
-  --brand-soft: var(--color-violet-50);
-  --brand-soft-text: var(--color-violet-700);
-  --brand-ring: var(--color-violet-100);
+  --brand: var(--color-blue-600);
+  --brand-hover: var(--color-blue-700);
+  --brand-text: var(--color-blue-600);
+  --brand-soft: var(--color-blue-50);
+  --brand-soft-text: var(--color-blue-700);
+  --brand-ring: var(--color-blue-100);
 }
 
 .dark {
-  --page: #0b0a12;
-  --surface: #15121f;
-  --surface-alt: #1b1729;
-  --surface-alt-2: #211c32;
-  --text-primary: #f4f2fa;
-  --text-secondary: #b8b3c9;
-  --text-muted: #8d87a3;
-  --text-faint: #6b6683;
-  --border-subtle: #221e33;
-  --border: #2c2740;
+  --page: #090e1a;
+  --surface: #0f1828;
+  --surface-alt: #151f32;
+  --surface-alt-2: #1c293f;
+  --text-primary: #eef2fb;
+  --text-secondary: #a8b8d8;
+  --text-muted: #7a90b5;
+  --text-faint: #566a8f;
+  --border-subtle: #192035;
+  --border: #243050;
 
-  --brand: var(--color-violet-500);
-  --brand-hover: var(--color-violet-400);
-  --brand-text: var(--color-violet-400);
-  --brand-soft: rgba(139, 92, 246, 0.12);
-  --brand-soft-text: var(--color-violet-300);
-  --brand-ring: rgba(139, 92, 246, 0.25);
+  --brand: var(--color-blue-500);
+  --brand-hover: var(--color-blue-400);
+  --brand-text: var(--color-blue-400);
+  --brand-soft: rgba(45, 79, 165, 0.15);
+  --brand-soft-text: var(--color-blue-300);
+  --brand-ring: rgba(45, 79, 165, 0.30);
 }
 
 html {

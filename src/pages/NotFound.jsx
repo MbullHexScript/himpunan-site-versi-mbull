@@ -48,7 +48,7 @@ export default function NotFound() {
             y1={nodes[a].y}
             x2={nodes[b].x}
             y2={nodes[b].y}
-            stroke="#7c3aed"
+            stroke="#2D4FA5"
             strokeWidth="1"
           />
         ))}
@@ -63,7 +63,7 @@ export default function NotFound() {
             cx={n.x}
             cy={n.y}
             r={i === bx || i === by ? 6 : 4}
-            fill={i === bx || i === by ? "#f87171" : "#a78bfa"}
+            fill={i === bx || i === by ? "#f87171" : "#5580c8"}
             animate={{ cy: [n.y, n.y - 6, n.y] }}
             transition={{
               duration: 3 + (i % 4),
@@ -104,7 +104,7 @@ export default function NotFound() {
           Koneksi Terputus
         </div>
 
-        <p className="font-display font-extrabold text-8xl md:text-9xl bg-gradient-to-b from-white to-violet-300 bg-clip-text text-transparent leading-none mb-6">
+        <p className="font-display font-extrabold text-8xl md:text-9xl bg-gradient-to-b from-white to-blue-300 bg-clip-text text-transparent leading-none mb-6">
           404
         </p>
 

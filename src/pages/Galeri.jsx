@@ -34,7 +34,7 @@ export default function Galeri() {
                 className="w-full block break-inside-avoid rounded-2xl overflow-hidden group relative"
                 style={{ aspectRatio: i % 3 === 0 ? "3/4" : "4/3" }}
               >
-                <div className="w-full h-full bg-gradient-to-br from-violet-700 via-violet-500 to-fuchsia-400 group-hover:scale-105 transition-transform duration-300" />
+                <div className="w-full h-full bg-gradient-to-br from-blue-700 via-blue-500 to-blue-400 group-hover:scale-105 transition-transform duration-300" />
                 <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/30 transition-colors flex items-end p-4 opacity-0 group-hover:opacity-100">
                   <p className="text-white text-xs font-medium text-left">{p.caption}</p>
                 </div>
@@ -60,7 +60,7 @@ export default function Galeri() {
               className="bg-[var(--surface)] rounded-2xl overflow-hidden max-w-lg w-full"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="aspect-video bg-gradient-to-br from-violet-700 via-violet-500 to-fuchsia-400" />
+              <div className="aspect-video bg-gradient-to-br from-blue-700 via-blue-500 to-blue-400" />
               <div className="p-5 flex items-center justify-between">
                 <p className="text-sm font-medium text-[var(--text-secondary)]">{selected.caption}</p>
                 <button onClick={() => setSelected(null)} className="text-[var(--text-faint)] hover:text-[var(--text-secondary)]">

@@ -13,7 +13,7 @@ export default function ActivityCard({ item, index = 0 }) {
       to={`/aktivitas/${item.slug}`}
       className="group block bg-[var(--surface)] rounded-3xl overflow-hidden border border-[var(--border-subtle)] hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
     >
-      <div className="relative aspect-[16/11] bg-gradient-to-br from-violet-700 via-violet-600 to-fuchsia-500 overflow-hidden">
+      <div className="relative aspect-[16/11] bg-gradient-to-br from-blue-800 via-blue-600 to-blue-500 overflow-hidden">
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_20%_20%,white,transparent_40%)]" />
         <span
           className={`absolute top-4 left-4 text-[10px] font-semibold uppercase tracking-wide px-3 py-1 rounded-full ${statusStyle[item.status]}`}

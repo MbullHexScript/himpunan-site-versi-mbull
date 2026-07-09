@@ -36,7 +36,7 @@ export default function AktivitasDetail() {
   return (
     <div className="pt-24 pb-24">
       {/* Cover */}
-      <div className="relative h-[420px] md:h-[520px] bg-gradient-to-br from-violet-800 via-violet-600 to-fuchsia-500 overflow-hidden">
+      <div className="relative h-[420px] md:h-[520px] bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500 overflow-hidden">
         <div className="absolute inset-0 opacity-25 bg-[radial-gradient(circle_at_20%_10%,white,transparent_45%)]" />
         <div className="container-hmps relative h-full flex flex-col justify-between py-6">
           <Link

@@ -30,7 +30,7 @@ export default function PageHero({ title, highlight, subtitle, image }) {
           initial={{ width: 0 }}
           animate={{ width: 56 }}
           transition={{ duration: 0.6 }}
-          className="h-1 rounded-full bg-violet-500 mb-6"
+          className="h-1 rounded-full bg-blue-600 mb-6"
         />
 
         <motion.h1
@@ -39,7 +39,7 @@ export default function PageHero({ title, highlight, subtitle, image }) {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="font-display font-extrabold text-4xl md:text-6xl text-white mb-4 leading-tight"
         >
-          {title} {highlight && <span className="text-violet-400">{highlight}</span>}
+          {title} {highlight && <span className="text-blue-500">{highlight}</span>}
         </motion.h1>
 
         {subtitle && (

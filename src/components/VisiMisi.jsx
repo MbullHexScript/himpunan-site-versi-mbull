@@ -23,10 +23,10 @@ export default function VisiMisi() {
 
       <div className="grid md:grid-cols-2 gap-6">
         <Reveal delay={0.1}>
-          <div className="bg-gradient-to-br from-slate-900 to-violet-950 text-white rounded-3xl p-10 h-full flex flex-col justify-between min-h-[340px] relative overflow-hidden">
+          <div className="bg-gradient-to-br from-slate-900 to-blue-950 text-white rounded-3xl p-10 h-full flex flex-col justify-between min-h-[340px] relative overflow-hidden">
             <div>
-              <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-violet-300 mb-8">
-                <span className="w-1.5 h-1.5 rounded-full bg-violet-300" /> VISI
+              <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-blue-300 mb-8">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-300" /> VISI
               </span>
               <p className="text-xl md:text-2xl font-medium leading-snug">
                 Menjadikan Himpunan Mahasiswa Informatika UIN Banten sebagai wadah pengembangan akademik, keterampilan teknologi, serta pembentukan karakter mahasiswa yang aktif dan berdaya saing.

@@ -59,7 +59,7 @@ export default function Footer() {
             rel="noreferrer"
             className="block bg-slate-800/60 rounded-xl p-4 hover:bg-slate-800 transition-colors"
           >
-            <span className="flex items-center gap-1 text-violet-400 text-xs font-semibold">
+            <span className="flex items-center gap-1 text-blue-400 text-xs font-semibold">
               INFORMATIKA OFFICIAL <ExternalLink size={12} />
             </span>
             <span className="block text-sm text-white mt-1">INFORMATIKA UINSMHB</span>
@@ -73,7 +73,7 @@ export default function Footer() {
             © {new Date().getFullYear()} <span className="text-slate-300 font-medium">KABINET LAZARUS</span>. All Rights Reserved.
           </p>
           <address className="flex max-w-xl gap-2 not-italic leading-relaxed text-[var(--text-faint)] md:justify-end md:text-right">
-            <MapPin size={16} className="mt-0.5 shrink-0 text-violet-400" />
+            <MapPin size={16} className="mt-0.5 shrink-0 text-blue-400" />
             <span>
               Jl. Syeh Nawawi Al Bantani No. 01, Gedung B FSAINS UIN SMHB,
               Curug, Kota Serang — Banten.
