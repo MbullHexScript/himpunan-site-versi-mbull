@@ -2,8 +2,8 @@ import Reveal from "./Reveal";
 import Eyebrow from "./Eyebrow";
 import PhotoStack from "./PhotoStack";
 import RotatingText from "./RotatingText";
+import TextReveal from "./TextReveal";
 
-// Tambahkan/ganti foto di sini — urutan pertama = paling depan
 const aboutPhotos = [
   { src: "/hmps-2.jpg", alt: "Kegiatan komunitas HMPS INF" },
   { src: "/hmps-1.jpg", alt: "Dokumentasi HMPS INF" },
@@ -16,8 +16,8 @@ export default function About() {
       <div className="grid md:grid-cols-2 gap-14 items-center">
         <Reveal>
           <Eyebrow>TENTANG KAMI</Eyebrow>
-          <h2 className="font-display font-extrabold text-4xl md:text-4xl mt-5 mb-6 leading-tight text-[var(--text-primary)] flex flex-wrap items-center gap-3">
-            INFORMATIKA
+          <h2 className="font-display font-extrabold text-4xl md:text-5xl mt-5 mb-6 leading-tight text-[var(--text-primary)] flex flex-wrap items-center gap-3">
+            Informatika
             <RotatingText
               texts={["Berkarya", "Berinovasi", "Bisa-bisa Jaya"]}
               mainClassName="px-3 sm:px-3 md:px-4 bg-[var(--brand)] text-white overflow-hidden py-1 sm:py-1.5 md:py-2 justify-center rounded-lg text-3xl md:text-4xl"
@@ -34,12 +34,10 @@ export default function About() {
               loop
             />
           </h2>
-          <p className="text-[var(--text-secondary)] leading-relaxed mb-4">
-            Himpunan Mahasiswa Informatika adalah wadah resmi bagi mahasiswa Program Studi
-            Informatika untuk mengembangkan potensi diri, meningkatkan
-            kemampuan akademis, dan menyalurkan aspirasi, bakat, minat, serta
-            kreativitas.
-          </p>
+          <TextReveal
+            text="Kabinet Lazarus adalah wadah resmi bagi mahasiswa Program Studi Informatika untuk mengembangkan potensi diri, meningkatkan kemampuan akademis, dan menyalurkan aspirasi, bakat, minat, serta kreativitas."
+            className="text-[var(--text-secondary)] leading-relaxed mb-4"
+          />
           <p className="text-[var(--text-secondary)] leading-relaxed">
             Kami berkomitmen membentuk mahasiswa yang berkompeten, kreatif,
             dan berintegritas dan menjadi jembatan antara mahasiswa dan civitas

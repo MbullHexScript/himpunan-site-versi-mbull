@@ -1,16 +1,37 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 import { ChevronDown } from "lucide-react";
+import BlurText from "./BlurText";
+
+const handleAnimationComplete = () => {
+  console.log('Animation completed!');
+};
 
 export default function Hero() {
+  const sectionRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"],
+  });
+  // Foto bergerak lebih pelan dari konten pas discroll — efek parallax/depth
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "25%"]);
+
   return (
-    <section className="relative h-screen min-h-[640px] flex items-end overflow-hidden">
-      {/* Background photo */}
-   <div className="absolute inset-0">
-     <div
-       className="w-full h-full bg-cover bg-center"
-       style={{ backgroundImage: "url('/hmps-1.jpg')" }}/>
-     <div className="absolute inset-0 bg-slate-900/55" />
-   </div>
+    <section
+      ref={sectionRef}
+      className="relative h-screen min-h-[640px] flex items-end overflow-hidden"
+    >
+      {/* Background photo — dibuat lebih besar dari container biar nggak ada gap pas ke-geser parallax */}
+      <motion.div
+        className="absolute inset-x-0"
+        style={{ y, top: "-12%", height: "124%" }}
+      >
+        <div
+          className="w-full h-full bg-cover bg-center"
+          style={{ backgroundImage: "url('/hmps-1.jpg')" }}
+        />
+        <div className="absolute inset-0 bg-slate-900/55" />
+      </motion.div>
 
       <div className="container-hmps relative z-10 pb-24 pt-40 text-center mx-auto">
         <motion.div
@@ -25,14 +46,14 @@ export default function Hero() {
           </span>
         </motion.div>
 
-        <motion.h1
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-display font-extrabold text-white leading-[0.95] text-[15vw] md:text-[9rem] tracking-tight"
-        >
-          HMPS INF
-        </motion.h1>
+        <BlurText
+          text="HMPS INF"
+          delay={500}
+          animateBy="words"
+          direction="top"
+          onAnimationComplete={handleAnimationComplete}
+          className="font-display font-extrabold text-white leading-[0.95] text-[15vw] md:text-[9rem] tracking-tight justify-center"
+        />
 
         <motion.p
           initial={{ opacity: 0 }}
@@ -65,6 +86,7 @@ export default function Hero() {
           >
             Gabung HMPS INF →
           </a>
+
           <a
             href="#tentang"
             className="inline-flex items-center gap-2 bg-[var(--surface)]/10 hover:bg-[var(--surface)]/20 border border-white/20 transition-colors text-white text-sm font-semibold px-6 py-3.5 rounded-full backdrop-blur-sm"
