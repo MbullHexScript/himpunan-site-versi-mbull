@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Search } from "lucide-react";
+import Seo from "../components/Seo";
 import Reveal from "../components/Reveal";
 import PageHero from "../components/PageHero";
 import ActivityCard from "../components/ActivityCard";
@@ -31,6 +32,11 @@ export default function Aktivitas() {
 
   return (
     <div className="pb-24">
+      <Seo
+        title="Aktivitas"
+        path="/aktivitas"
+        description="Jelajahi berbagai kegiatan, workshop, seminar, dan kompetisi yang diselenggarakan oleh HMPS Informatika UINSMHB untuk mahasiswa."
+      />
       <PageHero
         title="Jelajahi Aktivitas Kami"
         subtitle="Temukan berbagai kegiatan, workshop, seminar, dan kompetisi yang diselenggarakan oleh HMPS Informatika untuk meningkatkan skill kamu."

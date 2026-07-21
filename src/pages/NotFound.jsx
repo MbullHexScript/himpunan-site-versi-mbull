@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Home, Unplug } from "lucide-react";
+import { Home, Unplug } from "lucide-react"
+import Seo from "../components/Seo";
+
 
 // Titik-titik node & garis penghubung untuk background "jaringan"
 const nodes = [
@@ -34,7 +36,8 @@ export default function NotFound() {
   const uy = (dy / len) * gap;
 
   return (
-    <div className="relative min-h-screen bg-slate-950 overflow-hidden flex items-center justify-center px-6">
+     <div className="relative min-h-screen bg-slate-950 overflow-hidden flex items-center justify-center px-6">
+      <Seo title="Halaman Tidak Ditemukan" noIndex />
       {/* Background network */}
       <svg
         className="absolute inset-0 w-full h-full opacity-40"

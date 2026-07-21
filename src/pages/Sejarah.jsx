@@ -1,5 +1,7 @@
 import Reveal from "../components/Reveal";
 import Eyebrow from "../components/Eyebrow";
+import Seo from "../components/Seo";
+
 
 const timeline = [
   { tahun: "2015", title: "Berdirinya HMPS INF", desc: "Program Studi Informatika UINSMHB resmi membentuk himpunan mahasiswa sebagai wadah aspirasi dan pengembangan diri." },
@@ -11,6 +13,11 @@ const timeline = [
 export default function Sejarah() {
   return (
     <div className="pt-40 pb-24">
+      <Seo
+        title="Sejarah"
+        path="/sejarah"
+        description="Perjalanan dan sejarah berdirinya HMPS Informatika UINSMHB dari tahun ke tahun."
+      />
       <div className="container-hmps">
         <Reveal>
           <Eyebrow>PERJALANAN KAMI</Eyebrow>

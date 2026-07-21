@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Star, Users, Building2 } from "lucide-react";
+import Seo from "../components/Seo";
 import Reveal from "../components/Reveal";
 import Eyebrow from "../components/Eyebrow";
 import TeamCard from "../components/TeamCard";
@@ -23,6 +24,11 @@ export default function StrukturOrganisasi() {
 
   return (
     <div className="pt-40 pb-24">
+      <Seo
+        title="Struktur Organisasi"
+        path="/struktur-organisasi"
+        description="Kenali BPH dan departemen HMPS Informatika UINSMHB masa khidmat 2026, beserta tugas dan fungsinya masing-masing."
+      />
       <div className="container-hmps">
         <Reveal>
           <Eyebrow>MASA KHIDMAT 2026</Eyebrow>

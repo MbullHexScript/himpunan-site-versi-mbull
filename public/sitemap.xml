@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Update manual: tiap kali nambah aktivitas baru di src/data/aktivitas/,
+  tambahin juga <url> barunya di sini dengan pola:
+  https://lazarus-informatika.vercel.app/aktivitas/<slug>
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://lazarus-profile-versi-mbull.vercel.app/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lazarus-profile-versi-mbull.vercel.app/aktivitas</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://lazarus-profile-versi-mbull.vercel.app/kaderisasi mahasiswa informatika 2026</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lazarus-profile-versi-mbull.vercel.app/struktur-organisasi</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lazarus-profile-versi-mbull.vercel.app/sejarah</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lazarus-profile-versi-mbull.vercel.app/pendaftaran</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lazarus-profile-versi-mbull.vercel.app/galeri</loc>
+    <priority>0.6</priority>
+  </url>
+</urlset>

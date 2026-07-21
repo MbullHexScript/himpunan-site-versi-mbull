@@ -2,6 +2,8 @@ import { useState } from "react";
 import Reveal from "../components/Reveal";
 import Eyebrow from "../components/Eyebrow";
 import { CheckCircle2 } from "lucide-react";
+import Seo from "../components/Seo";
+
 
 export default function Pendaftaran() {
   const [sent, setSent] = useState(false);
@@ -13,6 +15,11 @@ export default function Pendaftaran() {
 
   return (
     <div className="pt-40 pb-24">
+      <Seo
+        title="Pendaftaran"
+        path="/pendaftaran"
+        description="Daftar jadi anggota atau ikut kegiatan HMPS Informatika UINSMHB. Isi formulir pendaftaran secara online di sini."
+      />
       <div className="container-hmps grid md:grid-cols-2 gap-14 items-start">
         <Reveal>
           <Eyebrow>PENDAFTARAN</Eyebrow>

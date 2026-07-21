@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
+import Seo from "../components/Seo";
 import Reveal from "../components/Reveal";
 import {
   ChevronLeft,
@@ -36,6 +37,12 @@ export default function AktivitasDetail() {
 
   return (
     <div className="pt-24 pb-24">
+      <Seo
+        title={item.judul}
+        path={`/aktivitas/${item.slug}`}
+        description={item.ringkas}
+        image={hasPhoto ? `https://lazarus-profile-versi-mbull.vercel.app${item.cover}` : undefined}
+      />
       {/* Cover — foto polos, tanpa teks besar overlay */}
       <div className="relative h-[560px] md:h-[550px] overflow-hidden">
         {hasPhoto ? (

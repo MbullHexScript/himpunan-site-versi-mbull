@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
+import Seo, { SITE_URL, SITE_NAME } from "../components/Seo";
 import About from "../components/About";
 import VisiMisi from "../components/VisiMisi";
 import Culture from "../components/Culture";
@@ -24,6 +25,17 @@ const marqueeBadges = [
 export default function Home() {
   return (
     <>
+      <Seo
+        path="/"
+        description="Wadah pengembangan akademik, teknologi, inovasi, dan kolaborasi mahasiswa Teknik Informatika UINSMHB. Kenali kegiatan, struktur organisasi, dan program kerja kami."
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "CollegeOrUniversity",
+          name: SITE_NAME,
+          url: SITE_URL,
+          logo: `${SITE_URL}/logo_hmps.png`,
+        }}
+      />
       <Hero />
 
       <div className="container-hmps my-8">

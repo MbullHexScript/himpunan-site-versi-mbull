@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import Reveal from "../components/Reveal";
 import Eyebrow from "../components/Eyebrow";
+import Seo from "../components/Seo";
 
 const photos = Array.from({ length: 8 }).map((_, i) => ({
   id: i,
@@ -14,6 +15,11 @@ export default function Galeri() {
 
   return (
     <div className="pt-40 pb-24">
+      <Seo
+        title="Galeri"
+        path="/galeri"
+        description="Dokumentasi momen-momen terbaik dari berbagai kegiatan HMPS Informatika UINSMHB."
+      />
       <div className="container-hmps">
         <Reveal>
           <Eyebrow>DOKUMENTASI</Eyebrow>
