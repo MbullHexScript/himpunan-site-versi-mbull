@@ -68,52 +68,86 @@ export default function AktivitasDetail() {
         </div>
 
         {/* Status + judul nempel di bagian bawah foto */}
-        <div className="absolute bottom-0 inset-x-0 pb-6">
+        <div className="absolute bottom-0 inset-x-0 pb-20 md:pb-24">
           <div className="container-hmps">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-white bg-white/15 backdrop-blur-sm border border-white/20 rounded-full px-3 py-1.5">
-                <span className={`w-1.5 h-1.5 rounded-full ${badge.dot}`} />
-                {badge.label}
-              </span>
-              <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-white bg-white/15 backdrop-blur-sm border border-white/20 rounded-full px-3 py-1.5">
-                <MapPin size={12} />
-                {item.tipe}
-              </span>
+            <div className="max-w-4xl mx-auto">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-white bg-white/15 backdrop-blur-sm border border-white/20 rounded-full px-3 py-1.5">
+                  <span className={`w-1.5 h-1.5 rounded-full ${badge.dot}`} />
+                  {badge.label}
+                </span>
+                <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-white bg-white/15 backdrop-blur-sm border border-white/20 rounded-full px-3 py-1.5">
+                  <MapPin size={12} />
+                  {item.tipe}
+                </span>
+              </div>
+              <h1 className="font-display font-extrabold text-3xl md:text-5xl text-white leading-tight">
+                {item.judul}
+              </h1>
             </div>
-            <h1 className="font-display font-extrabold text-3xl md:text-5xl text-white leading-tight">
-              {item.judul}
-            </h1>
           </div>
         </div>
       </div>
 
-      <div className="container-hmps">
-        {/* Kartu detail — dikit overlap ke atas nutupin batas bawah foto */}
-        <div className="grid md:grid-cols-4 gap-4 -mt-8 relative z-10 mb-14">
-          {[
-            { label: "Mulai", value: fmt(item.tanggalMulai), sub: new Date(item.tanggalMulai).toLocaleDateString("id-ID", { weekday: "long" }), icon: Calendar },
-            { label: "Selesai", value: fmt(item.tanggalSelesai), sub: item.durasi, icon: Calendar },
-            { label: "Tipe", value: item.tipe, sub: "Tatap muka", icon: MapPin },
-            { label: "Lokasi", value: item.lokasi, sub: "Lokasi kegiatan", icon: MapPin },
-          ].map((box) => (
-            <Reveal key={box.label} delay={0.05}>
-              <div className="bg-[var(--surface)] border border-[var(--border-subtle)] shadow-md rounded-2xl p-5 h-full">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="w-8 h-8 rounded-lg bg-[var(--brand-soft)] text-[var(--brand-text)] grid place-items-center">
-                    <box.icon size={15} />
-                  </span>
-                  <span className="text-[11px] font-semibold tracking-wider text-[var(--text-faint)] uppercase">
-                    {box.label}
-                  </span>
+     <div className="container-hmps">
+        {/* Kartu detail — overlap ke bawah foto cover, dipersempit & sejajar dengan judul */}
+        <div className="max-w-4xl mx-auto -mt-16 md:-mt-20 relative z-10 mb-14">
+          <Reveal>
+            <div className="bg-[var(--surface)] border border-[var(--border-subtle)] shadow-md rounded-2xl grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-[var(--border-subtle)]">
+              {[
+                {
+                  label: "Mulai",
+                  value: fmt(item.tanggalMulai),
+                  sub: new Date(item.tanggalMulai).toLocaleDateString("id-ID", { weekday: "long" }),
+                  icon: Calendar,
+                  tone: "blue",
+                },
+                {
+                  label: "Selesai",
+                  value: fmt(item.tanggalSelesai),
+                  sub: item.durasi,
+                  icon: Calendar,
+                  tone: "blue",
+                },
+                {
+                  label: "Tipe",
+                  value: item.tipe,
+                  sub: "Tatap muka",
+                  icon: MapPin,
+                  tone: "amber",
+                },
+                {
+                  label: "Lokasi",
+                  value: item.lokasi,
+                  sub: "Lokasi kegiatan",
+                  icon: MapPin,
+                  tone: "amber",
+                },
+              ].map((box) => (
+                <div key={box.label} className="p-5">
+                  <div className="flex items-center gap-2 mb-3">
+                    <span
+                      className={`w-8 h-8 rounded-lg grid place-items-center shrink-0 ${
+                        box.tone === "blue"
+                          ? "bg-blue-50 text-blue-600 dark:bg-blue-500/15 dark:text-blue-400"
+                          : "bg-amber-50 text-amber-600 dark:bg-amber-500/15 dark:text-amber-400"
+                      }`}
+                    >
+                      <box.icon size={15} />
+                    </span>
+                    <span className="text-[11px] font-semibold tracking-wider text-[var(--text-faint)] uppercase">
+                      {box.label}
+                    </span>
+                  </div>
+                  <p className="font-semibold text-[var(--text-primary)] capitalize">{box.value}</p>
+                  <p className="text-xs text-[var(--text-faint)] mt-0.5">{box.sub}</p>
                 </div>
-                <p className="font-semibold text-[var(--text-primary)] capitalize">{box.value}</p>
-                <p className="text-xs text-[var(--text-faint)] mt-0.5">{box.sub}</p>
-              </div>
-            </Reveal>
-          ))}
+              ))}
+            </div>
+          </Reveal>
         </div>
 
-        <div className="grid md:grid-cols-[1fr_320px] gap-10">
+        <div className="max-w-4xl mx-auto grid md:grid-cols-[1fr_320px] gap-10">
           <Reveal>
             <span className="text-[11px] font-semibold tracking-wider text-[var(--text-faint)] uppercase">
               Tentang Kegiatan
