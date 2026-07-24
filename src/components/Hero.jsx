@@ -29,7 +29,7 @@ export default function Hero() {
       >
         <div
           className="w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: "url('/hmps-1.jpg')" }}
+          style={{ backgroundImage: "url('/hero-2627.jpeg')" }}
         />
         <div className="absolute inset-0 bg-slate-900/55" />
       </motion.div>
